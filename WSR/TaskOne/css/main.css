@@ -1,0 +1,96 @@
+body{
+ color: black;
+ background-color: #348DE0;
+ font-size: 18px;
+ font-family: sans-serif;
+}
+h1{
+	text-align :center;
+}
+a{
+    text-decoration: none;
+   
+}
+.left{
+	margin-top:100px;
+	margin-bottom: 200px;
+	display: inline-block;
+	
+}
+.sensor{
+	max-width: 230px;
+	margin-left: 120px;
+	padding: 10px;
+	margin-top: 15px;
+	background-color: gray;
+	vertical-align:top;
+}
+.sensor h2{
+	text-align: center;
+}
+.sensor li{
+	list-style-type: none;
+	margin-top: 5px;
+}
+.show a{
+	margin-left: 120px;
+	max-width: 253px;
+	padding: 5px;
+ 	color: black;
+ 	text-align: center;
+ 	display: block;
+ 	background-color:#293AD0;
+}
+.rooms{
+	display:inline-block;
+	width:60%;
+	margin-top: 100px;
+	margin-left: 100px;
+	vertical-align:top;
+}
+.wrap_up{
+display:inline-block;
+margin-left: 100px;
+margin-top: 25px;
+}
+.wrap_down{
+display:inline-block;
+margin-left: 100px;
+margin-top: 25px;
+}
+.room{
+	display:inline-block;
+	max-width: 300px;
+	max-height: 400px;
+	overflow:hidden;
+	margin: 10px;
+	background-color:#293AD0;
+	
+}
+.room a{
+text-decoration: none;
+}
+
+.room p {
+text-align: center;
+color:black;
+margin: 10px 0;
+}
+@media all and (max-width: 1203px){
+    
+    .room{
+    	display: block;
+    }
+
+	.rooms{
+		display: block;
+		margin-top: 0px;
+		margin-left: 210px;
+	}
+	.left{
+	margin-top:100px;
+	margin-bottom: 50px;
+	margin-left: 240px;
+	display: inline-block;
+	}
+}

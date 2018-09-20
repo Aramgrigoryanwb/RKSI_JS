@@ -1,0 +1,89 @@
+body{
+ color: black;
+ background-color: #348DE0;
+ font-size: 18px;
+ font-family: sans-serif;
+}
+h1{
+	text-align: center;
+}
+.image{
+ margin-top: 50px;
+ display: block;
+}
+.image img{
+ width: 1100px;
+ height: 500px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto 
+}
+.sensor{
+	width: 230px;
+	margin-left: 120px;
+	padding: 10px;
+	margin-top: 15px;
+	background-color: gray;
+	display:inline-block;
+	vertical-align:top;
+}
+.sensor h2{
+	text-align: center;
+}
+.sensor li{
+	list-style-type: none;
+	margin-top: 5px;
+}
+.device{
+	width: 230px;
+	margin-left: 300px;
+	padding: 10px;
+	margin-top: 15px;
+	background-color: gray;
+	display:inline-block;
+	vertical-align:top;
+}
+.device h2{
+	text-align: center;
+}
+.device li{
+	list-style-type: none;
+	margin-top: 5px;
+}
+.button{
+ width: 230px;
+ margin-top: 60px;
+ margin-left: 240px;
+ display: inline-block;
+ background-color: gray;
+ padding: 15px 0;
+ vertical-align:top;
+ text-align: center;
+}
+.button a{
+ color: black;
+ text-decoration : none;
+}
+	@media all and (max-width: 1203px){
+	    
+	  .image{
+	  	margin: auto;
+	  }
+	.sensor{
+		margin: auto;
+		display:block;
+		margin-top: 30px;
+	}
+
+	.device{
+		margin: auto;
+		display:block;
+		margin-top: 30px;
+		}
+
+	.button{
+		margin: auto;
+	  	display: block;
+		margin-top: 30px;
+	}
+}

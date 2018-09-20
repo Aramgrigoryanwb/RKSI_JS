@@ -1,0 +1,61 @@
+ body{
+ color: black;
+ background-color: #348DE0;
+ font-size: 18px;
+ font-family: sans-serif;
+}
+h1{
+	text-align :center;
+}
+a{
+    text-decoration: none;
+   
+}
+.sensor{
+	width: 230px;
+	margin-left: 340px;
+	padding: 10px;
+	margin-top: 15px;
+	background-color: gray;
+	vertical-align:top;
+	display:inline-block;
+}
+
+.sensor h2{
+	text-align: center;
+}
+.sensor li{
+	list-style-type: none;
+	margin-top: 5px;
+}
+.button{
+ width: 230px;
+ margin-top: 60px;
+ margin-left: auto;
+ margin-right:auto;
+ display: block;
+ background-color: gray;
+ padding: 15px 0;
+ vertical-align:top;
+ text-align: center;
+
+}
+.button a{
+ color: black;
+ text-decoration : none;
+}
+
+@media all and (max-width: 1203px){
+	    
+	
+	.sensor{
+		display:block;
+		margin-top: 30px;
+		margin-left: 360px;
+	}
+
+	.button{
+		margin: auto;
+		margin-top: 30px;
+	}
+}

@@ -1,0 +1,36 @@
+body{
+ color: black;
+ background-color: #348DE0;
+ font-size: 18px;
+ font-style: sans-serif;
+}
+div{
+ margin: auto;
+ max-width: 350px;
+}
+h1{
+	margin-left: 10px;
+}
+form{
+ width: auto;
+}
+input{
+ color: black;
+ padding-left: 5px;
+ background-color: inherit;
+ border: none;
+ border-bottom: 1px solid black;
+ width: 90%;
+ height: 30px;
+}
+a{
+ margin-top: 20px;
+ display: block;
+ width: 90%;
+ background-color: white;
+ padding: 15px 0;
+ color: black;
+ text-align: center;
+ text-decoration : none 
+}
+
