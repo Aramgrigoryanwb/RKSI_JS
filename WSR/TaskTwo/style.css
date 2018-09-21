@@ -10,6 +10,9 @@ html {
 }
 mark {
 	background-color: inherit;
+	font-size: 40px;
+    background-color: inherit;
+    margin-top: auto;
 }
 h2{
 	text-align: center;
@@ -22,6 +25,7 @@ h3{
 	background-color: #ffd200;
    	padding: 45px 0;
  	font-size: 25px;
+ 	position: relative;
 }
 ul{
     list-style: none;
@@ -54,14 +58,27 @@ section > ul > li > ul > li{
     margin-top: 13px;
     align-items: flex-start;
 }
-mark{
-    font-size: 40px;
-    background-color: inherit;
-    margin-top: auto;
-}
 section > ul > li > p{
     margin-top: 20px;
     background-color: #ffd200;
     padding: 10px 0;
     
+}
+section > ul > li:nth-child(2) > h3::before{
+    content: 'BESTSELLER';
+    position: absolute;
+    font-size: 11px;
+    color: #e11a27;
+    top:-20px;
+    margin-left:6.5px;
+    padding: 10px 35px 20px 35px;
+    background: url(img/overlay.png) no-repeat;
+	background-size: contain;
+   }
+
+@media all and (max-width: 900px){
+	section > ul {
+		flex-direction: column;
+		align-items: center;
+	}
 }
