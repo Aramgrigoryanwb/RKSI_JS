@@ -1,0 +1,125 @@
+* {
+	font-family: 'Arial', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size:18px;
+}
+body{
+	position: relative;
+	background: url(img/background.png) no-repeat;
+	background-size: cover;
+}
+ul{
+		list-style: none;
+}
+a{
+		text-decoration: none;
+		color:#989d9f;
+}
+header {
+	background: url(img/headphonesMain.png) no-repeat;
+	background-position: center;
+	height: 845px; 
+}
+nav > ul {
+	display: flex;
+	justify-content: flex-start;
+}
+nav > ul > li {
+	margin-left: 30px;
+	margin-top: 65px;
+	font-size: 1rem;
+}
+nav > ul > li:first-child{
+	margin-left: 225px;
+}
+nav > ul > li:last-child{
+    margin-left:auto;
+    margin-right: 40px;
+}
+section > h1{
+	color:#e44e57;
+	font-size:2.7rem;
+	text-align:center;
+	margin-bottom: 45px;
+}	
+section{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	position: relative;
+}
+section > p{
+	color:#989d9f;
+	text-align:center;
+	margin-bottom: 65px;
+}
+section  p:nth-child(2){
+ margin-bottom:0px;
+}
+section > a{
+	width: 250px;
+	padding:25px 33px;
+	border-radius: 50px;
+	background-color: #e44e57;
+	font-size: 0.8rem;
+	color:#ffffff;
+	text-align: center;
+
+}
+section > a::before{
+		 content: url(img/squad.png);
+		 margin-right:5px;
+		 margin-left:17px;
+}
+section > ul{
+	display:flex;
+	margin-left: auto;
+	
+}
+section > ul > li{
+	margin-bottom: 30px;
+}
+section > ul > li:first-child{
+	 margin-right: 30px;
+}
+section > ul > li:nth-child(2){
+	margin-right:270px;
+}
+section > img{
+	position: absolute;
+	top: 120px;
+	right: 35px;
+	margin-bottom:0px;
+	height: 204px;
+	width:170px;
+}
+
+footer{
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	background-color: #cac0b4;
+	display: flex;
+	align-items: center;
+ 	justify-content: flex-end;
+ 	flex-direction: column;
+ 	width: 125px;
+}
+footer > ul > li{
+	transform: rotate(90deg);
+	margin-top:20px;
+}
+footer > ul > li:last-child{
+	margin-bottom: 20px;
+}
+footer > ul > li:first-child{
+	margin-bottom: 90px;
+}
+footer > ul > li > a{
+	color: #ffffff;
+}
