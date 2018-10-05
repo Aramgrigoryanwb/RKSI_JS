@@ -1,18 +1,28 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
 body{
  color: black;
  background-color: #348DE0;
  font-size: 18px;
  font-style: sans-serif;
+
 }
-div{
- margin: auto;
- max-width: 350px;
+
+section{
+ 		display: flex;
+  		flex-direction: column;
 }
 h1{
-	margin-left: 10px;
+	text-align: center;
 }
 form{
- width: auto;
+     margin: auto;
+     max-width: 350px;
+
 }
 input{
  color: black;
@@ -20,8 +30,11 @@ input{
  background-color: inherit;
  border: none;
  border-bottom: 1px solid black;
- width: 90%;
+ width: 88%;
  height: 30px;
+}
+input::placeholder {
+	color:black;
 }
 a{
  margin-top: 20px;

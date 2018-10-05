@@ -1,0 +1,50 @@
+section{
+    position: relative;
+    width: 90vw;
+    padding-top: 65.6vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+input{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+input:checked + img + label{
+    background-color: red;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: .5s;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+input:checked + img{
+    display: block;;
+}
+label{
+    display: inline-block;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    background-color: darkred;
+    border-radius: 50%;
+    z-index: 666;
+    margin: 10px 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+@media all and (max-width: 1200px){
+    section{
+        padding-top: 40vw;
+    }
+    label{
+        width: 15px;
+        height: 15px;
+    }
+}
