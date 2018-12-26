@@ -12,9 +12,11 @@ html{
 ul{
 		list-style: none;
 }
+li > a {
+    color: #000;
+}
 a{
         text-decoration: none;
-
 }
 body{
     overflow-x: hidden;
@@ -112,23 +114,27 @@ nav{
     padding-bottom: 30px;
 }
 .slider-list{
-    margin-top: 50px;
-    margin-left: 95px;
+    background-color: rgba(255, 255, 255,.3);
+    position: fixed;
+    z-index: 3;
+    top:20%;
 }
 .slider-list > li{
-    cursor: pointer;
     margin-bottom: 15px;
     color: #878787;
     font-weight: bold;
     padding: 10px;
     display: table;
 }
-.slider-list > li:not(:nth-child(1)):not(:nth-child(2)):hover{
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
-  border-radius: 100%;
-  display: inline-block;
-  transform: scale(1.5);
+.slider-list > li:nth-child(2), li:first-child{
+ cursor: pointer;
 }
+.hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+    border-radius: 100%;
+    display: inline-block;
+    transform: scale(2);
+  }
 .slider-list > li:not(:nth-child(1)):not(:nth-child(2)){
    padding-left: 10px;
    margin-left: 15px;
