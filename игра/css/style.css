@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+section{
+    width: 100vw;
+    height: 10vh;
+}
+.playTime{
+    background-color: #333;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+.playTime > *{
+    height: 7vh;
+    margin: auto 0;
+}
+.playTime mark, .playTime p, .score{
+    color: white;
+}
+.playTime > button{
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #333;
+    padding: 0 20px;
+    transition: .5s;
+}
+.playTime > button:hover{
+    background-color: #bbb;
+    color: white;
+}
+section:nth-child(2) > div{
+    width: 100vw;
+}
+.wrapper{
+    height: 90vh;
+    display: flex;
+}
+.wrapper > div {
+    height: 100%;
+}
+.wrapper .game{
+    width: 70vw;
+}
+.wrapper .game h2{
+    text-align: center;
+    margin-top: 20px;
+    transform: scale(1.5);
+}
+.generation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+.generation img{
+    height: 4vw;
+    width: 4vw;
+    position: relative;
+    transition: .3s;
+}
+.wrapper .generation, .wrapper .catch{
+    width: 15vw;
+    background-color: rgba(255,0,0,.2);
+}
+.wrapper .generation{
+    border-right: 15px solid red;
+}
+.wrapper .catch{
+    border-left: 15px solid red;
+}
+mark{
+    background-color: transparent;
+}
