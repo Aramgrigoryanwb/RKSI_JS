@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Я очень люблю паттерны(нет)</title>
+</head>
+<body>
+    <section>
+        <fieldset>
+            <form action="">
+                <header>
+                    <h1>Регистрация</h1>
+                </header>
+                <div class="shadow"></div>
+                <main>
+                    <label>Your Name</label>
+                    <input type="text" pattern="[А-Яа-яЁё]{3,8}">
+                    <label>Email Address</label>
+                    <input type="email">
+                    <label>Password</label>
+                    <input type="password">
+                    <label>Company</label>
+                    <input type="text" pattern="(?=^.{1,9}$)(?=.*[А-Яа-яЁё])(?=.*[0-9]).*" required> <!-- pattern="(([А-Яа-яЁё])([0-9])){1,9}" required -->
+                    <label>Phone Number</label>
+                    <input type="tel" pattern="[\d]{1,}">
+                    <label>Your Website</label>
+                    <input type="url" placeholder="http://">
+                    <label>Budget</label>
+                    <div class="select-cont">
+                        <select name="" id="">
+                            <option value="">Please Select</option>
+                            <option value="">rwe</option>
+                            <option value="">qwe</option>
+                            <option value="">asdsad</option>
+                            <option value="">asf</option>
+                        </select>
+                        <div></div>
+                    </div>
+                    <mark>Your information is sale with us. Guarantteed!</mark>
+                    <input type="submit">
+                </main>
+            </form>
+        </fieldset>
+        <div class="shadow"></div>
+    </section>
+</body>
+</html>
