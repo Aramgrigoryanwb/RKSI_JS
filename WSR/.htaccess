@@ -1,0 +1,21 @@
+ErrorDocument 401 http://domain.ru/errors/401.html 
+ErrorDocument 404 http://domain.ru/errors/404.html
+
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/(web)
+RewriteRule ^assets/(.*)$ /web/assets/$1 [L]
+RewriteRule ^css/(.*)$ web/css/$1 [L]
+RewriteRule ^fonts/(.*)$ web/fonts/$1 [L]
+RewriteRule ^js/(.*)$ web/js/$1 [L]
+RewriteRule ^images/(.*)$ web/images/$1 [L]
+RewriteRule ^robots.txt web/robots.txt [L]
+RewriteRule (.*) /web/$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /web/index.php
